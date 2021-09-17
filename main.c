@@ -103,26 +103,26 @@ void usage(int status)
 
 int main(int argc, char **argv)
 {
-	int c = -1;	/* command character */
-	int f;		/* default flag */
-	int n;		/* numeric repeat count */
-	int mflag;	/* negative flag on repeat */
-	struct buffer *bp;	/* temp buffer pointer */
-	int firstfile;	/* first file flag */
-	int carg;	/* current arg to scan */
-	int startflag;	/* startup executed flag */
+	int c = -1;			/* command character */
+	int f;				/* default flag */
+	int n;				/* numeric repeat count */
+	int mflag;			/* negative flag on repeat */
+	struct buffer *bp;		/* temp buffer pointer */
+	int firstfile;			/* first file flag */
+	int carg;			/* current arg to scan */
+	int startflag;			/* startup executed flag */
 	struct buffer *firstbp = NULL;	/* ptr to first buffer in cmd line */
-	int basec;		/* c stripped of meta character */
-	int viewflag;		/* are we starting in view mode? */
-	int gotoflag;		/* do we need to goto a line at start? */
-	int gline = 0;		/* if so, what line? */
-	int searchflag;		/* Do we need to search at start? */
-	int saveflag;		/* temp store for lastflag */
-	int errflag;		/* C error processing? */
-	char bname[NBUFN];	/* buffer name of file to read */
+	int basec;			/* c stripped of meta character */
+	int viewflag;			/* are we starting in view mode? */
+	int gotoflag;			/* do we need to goto a line at start? */
+	int gline = 0;			/* if so, what line? */
+	int searchflag;			/* Do we need to search at start? */
+	int saveflag;			/* temp store for lastflag */
+	int errflag;			/* C error processing? */
+	char bname[NBUFN];		/* buffer name of file to read */
 #if	CRYPT
-	int cryptflag;		/* encrypting on the way in? */
-	char ekey[NPAT];	/* startup encryption key */
+	int cryptflag;			/* encrypting on the way in? */
+	char ekey[NPAT];		/* startup encryption key */
 #endif
 	int newc;
 
