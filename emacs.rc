@@ -41,7 +41,7 @@ set $sres "CGA"
 ;	FN; FN< FN= FN> FN? FN@ FNA FNB FNC FND
 
 bind-to-key help			FN;	
-bind-to-key exit-emacs			FND
+bind-to-key exit-emacs		FND
 
 ;	Function keys (shifted)
 ;	F1  F2  F3  F4  F5  F6  F7  F8  F9  F10
@@ -55,12 +55,12 @@ bind-to-key exit-emacs			FND
 ;	Alt-X Alt-Z Alt-C Alt-F Alt-O
 ;	FN-   FN,   FN.   FN!   FN^X
 
-bind-to-key exit-emacs			FN-
-bind-to-key quick-exit			FN,
+bind-to-key exit-emacs		FN-
+bind-to-key quick-exit		FN,
 bind-to-key i-shell			FN.
-bind-to-key find-file			FN!
-bind-to-key view-file			FN/
-bind-to-key next-window			FN^X
+bind-to-key find-file		FN!
+bind-to-key view-file		FN/
+bind-to-key next-window		FN^X
 
 ;	Set screen colors
 
@@ -292,3 +292,4 @@ bind-to-key	newline	^J
 add-global-mode "utf-8"
 
 set $discmd "TRUE"
+set $tab	4
